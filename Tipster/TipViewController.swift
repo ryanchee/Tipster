@@ -22,6 +22,8 @@ class TipViewController: UIViewController, TipProtocol {
     var tipIndex = 0
     var lastSavedDate = NSDate()
     var initialized = false
+    var currencyFormat = NSNumberFormatter()
+
     
     @IBAction func onScreenTap(sender: AnyObject) {
         view.endEditing(true)
@@ -31,8 +33,8 @@ class TipViewController: UIViewController, TipProtocol {
         let bill = getbillTotalField()
         let tip = bill * tipSelected[tipControl.selectedSegmentIndex]
         let total = bill + tip
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        tipLabel.text = currencyFormatter(tip)
+        totalLabel.text = currencyFormatter(total)
         billTotal = bill
     }
 
@@ -53,7 +55,8 @@ class TipViewController: UIViewController, TipProtocol {
         var bill = 0.0
         if !billTotalField.text!.isEmpty {
             var billTotalText = billTotalField.text
-            billTotalText = billTotalText?.stringByReplacingOccurrencesOfString("$", withString: "")
+            billTotalText = billTotalText?.stringByReplacingOccurrencesOfString("\(currencyFormat.currencySymbol)", withString: "")
+            billTotalText = billTotalText?.stringByReplacingOccurrencesOfString("\(currencyFormat.currencyGroupingSeparator)", withString: "")
             // Catch errors for non numeric input.
             if (billTotalText?.rangeOfCharacterFromSet(goodCharacters) != nil) {
                 bill = Double(billTotalText!)!
@@ -67,6 +70,13 @@ class TipViewController: UIViewController, TipProtocol {
         tipSelected = value
         saveState()
         viewDidLoad()
+    }
+    
+    func currencyFormatter(numberToFormat: Double) -> String {
+        currencyFormat.usesGroupingSeparator = true
+        currencyFormat.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+        currencyFormat.locale = NSLocale.currentLocale()
+        return currencyFormat.stringFromNumber(numberToFormat)!
     }
     
     //Set all values for UI to default.
@@ -94,7 +104,7 @@ class TipViewController: UIViewController, TipProtocol {
     
     //Load the saved values
     func loadState() {
-        print("LOADSTATE CALLED")
+        print("loading state")
         let checkArray = defaults.objectForKey("tipPercetageArray")
         if (checkArray != nil) {
             tipSelected = checkArray as! [Double]
@@ -112,7 +122,7 @@ class TipViewController: UIViewController, TipProtocol {
         let savedBillTotal = defaults.doubleForKey("billTotal")
         if (savedBillTotal != 0.0) {
             billTotal = savedBillTotal
-            billTotalField.text = String(format: "$%.2f", billTotal)
+            billTotalField.text = String(format: "%.2f", billTotal)
         } else {
             billTotalField.text = ""
         }
@@ -146,11 +156,9 @@ class TipViewController: UIViewController, TipProtocol {
             NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadState", name: UIApplicationDidBecomeActiveNotification, object: nil)
             NSNotificationCenter.defaultCenter().addObserver(self, selector: "saveState", name: UIApplicationDidEnterBackgroundNotification, object: nil)
             initialized = true
-            print("initialized is \(initialized)")
             loadState()
         }
         print("viewdidLoad()")
-        //    loadState()
         for (var i = 0; i < tipSelected.count; i++) {
             tipControl.selectedSegmentIndex = i
             let percentageString = "\(Int(tipSelected[i] * 100))%"

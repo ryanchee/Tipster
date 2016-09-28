@@ -6,7 +6,7 @@ Tipster is a tip calculator application for iOS.
 
 Submitted by: Ryan Chee
 
-Time spent: 7 hours spent in total
+Time spent: 8 hours spent in total
 
 ## User Stories
 
@@ -18,7 +18,7 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 * [ ] UI animations
 * [X] Remembering the bill amount across app restarts (if < 1mins)
-* [ ] Using locale-specific currency and currency thousands separators.
+* [X] Using locale-specific currency and currency thousands separators.
 * [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
@@ -30,22 +30,26 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+**Walkthrough of required and optional user stories:**
 
 <img alt="Tipster Calc" src="https://i.imgur.com/jJ5mEJ1.gif" style="max-width: 100%; min-height: 586px;" original-title="">
+
+**Walkthrough of locale specific currency:**
+
+<img alt="Locale Currency Gif" src="https://i.imgur.com/diMEzbG.gif" style="max-width: 100%; min-height: 586px;" original-title="">
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+**Please run on iphone 5 or 5s.**
 Small bugs here and there...
-1. I am on Xcode 7.2 (Swift 2.2.x) so some syntax confusion with NSNotification.
-2. Typing non numeric characters.
-3. Keeping the UI updated with every computation in background
-        (Pickerview when selecting a segment, Segmented Control on random tip).
-4. Trying to register the app for notification of close/open in order to check NSDates
-5. Passing data in segue and back.
+- 1. I am on Xcode 7.2 (Swift 2.2.x) so some syntax confusion with NSNotification.
+- 2. Typing non numeric characters.
+- 3. Keeping the UI updated with every computation in background (Pickerview when selecting a segment, Segmented Control on random tip).
+- 4. Trying to register the app for notification of close/open in order to check NSDates
+- 5. Passing data in segue and back.
 
 ## License
 
