@@ -16,7 +16,32 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tipster.png" translatesAutoresizingMaskIntoConstraints="NO" id="kM5-df-4SY">
+                                <rect key="frame" x="189" y="142" width="222" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="UCB-O2-Mkb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnF-1z-HrS">
+                                <rect key="frame" x="226" y="365" width="148" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="WR2-dI-YLQ"/>
+                                    <constraint firstAttribute="height" constant="82" id="YrU-Mh-Kk7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kM5-df-4SY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4wf-CP-npE"/>
+                            <constraint firstItem="kM5-df-4SY" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="122" id="OJx-dc-k2a"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="tnF-1z-HrS" secondAttribute="bottom" constant="153" id="Qt4-VY-edC"/>
+                            <constraint firstItem="tnF-1z-HrS" firstAttribute="centerX" secondItem="kM5-df-4SY" secondAttribute="centerX" id="d1K-lT-e2U"/>
+                            <constraint firstItem="tnF-1z-HrS" firstAttribute="top" secondItem="kM5-df-4SY" secondAttribute="bottom" constant="8" symbolic="YES" id="pav-dL-vwR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +49,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tipster.png" width="338" height="302"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B7C39371D9B933D00A0924B /* tipster.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C39361D9B933D00A0924B /* tipster.png */; };
 		9BDA32DD1D924BCD00A0D429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA32DC1D924BCD00A0D429 /* AppDelegate.swift */; };
 		9BDA32DF1D924BCD00A0D429 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA32DE1D924BCD00A0D429 /* TipViewController.swift */; };
 		9BDA32E21D924BCD00A0D429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDA32E01D924BCD00A0D429 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B7C39361D9B933D00A0924B /* tipster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipster.png; sourceTree = "<group>"; };
 		9BDA32D91D924BCD00A0D429 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDA32DC1D924BCD00A0D429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BDA32DE1D924BCD00A0D429 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				9BDA32EB1D924BCD00A0D429 /* Info.plist */,
 				9BDA32E31D924BCD00A0D429 /* Tipster.xcdatamodeld */,
 				9BDA330F1D94BAD000A0D429 /* Protocol.swift */,
+				9B7C39361D9B933D00A0924B /* tipster.png */,
 			);
 			path = Tipster;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BDA32EA1D924BCD00A0D429 /* LaunchScreen.storyboard in Resources */,
+				9B7C39371D9B933D00A0924B /* tipster.png in Resources */,
 				9BDA32E71D924BCD00A0D429 /* Assets.xcassets in Resources */,
 				9BDA32E21D924BCD00A0D429 /* Main.storyboard in Resources */,
 			);
@@ -494,6 +498,7 @@
 				9BDA33061D924BCD00A0D429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BDA33071D924BCD00A0D429 /* Build configuration list for PBXNativeTarget "TipsterTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +507,7 @@
 				9BDA33091D924BCD00A0D429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BDA330A1D924BCD00A0D429 /* Build configuration list for PBXNativeTarget "TipsterUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +516,7 @@
 				9BDA330C1D924BCD00A0D429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

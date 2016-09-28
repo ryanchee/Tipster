@@ -54,10 +54,12 @@ class SettingsViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
         return i
     }
     
+    //Pass data back to TipViewController
     override func willMoveToParentViewController(parent: UIViewController?) {
         delegate?.setSettingsTipValues(settingsTipSelected)
     }
     
+    //Pass data back to TipViewController when app is exited from settingsviewcontroller
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(true)
         delegate?.setSettingsTipValues(settingsTipSelected)
@@ -77,16 +79,14 @@ class SettingsViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
         // Dispose of any resources that can be recreated.
     }
 
-    //MARK: Data Sources
+    //Functions for picker wheel
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return tipWheelData.count
     }
-    
-    //MARK: Delegates
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return "\(tipWheelData[row])%"
     }
     

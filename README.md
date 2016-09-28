@@ -6,7 +6,7 @@ Tipster is a tip calculator application for iOS.
 
 Submitted by: Ryan Chee
 
-Time spent: 5 hours spent in total
+Time spent: 7 hours spent in total
 
 ## User Stories
 
@@ -17,7 +17,7 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [ ] UI animations
-* [x (not comparing NSDate)] Remembering the bill amount across app restarts (if <10mins)
+* [X] Remembering the bill amount across app restarts (if < 1mins)
 * [ ] Using locale-specific currency and currency thousands separators.
 * [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
@@ -25,12 +25,14 @@ The following **additional** features are implemented:
 
 - [X] Added option to randomly select a tip percetage by tap or phone shake.
 - [X] Check against non numeric characters entered.
+- [X] Added app logo image on boot.
+- [X] Remembering tip percentage options accross app restarts.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img alt="Tip Calculator for CodePath" src="https://i.imgur.com/LrYmjhh.gif" style="max-width: 100%; min-height: 592px;" original-title="">
+<img alt="Tip Calculator for CodePath" src="//i.imgur.com/YqazRs0.gif" style="max-width: 100%; min-height: 586px;" original-title="">
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -38,11 +40,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 Small bugs here and there...
-1. Typing non numeric characters.
-2. Keeping the UI updated with every computation in background
+1. I am on Xcode 7.2 (Swift 2.2.x) so some syntax confusion with NSNotification.
+2. Typing non numeric characters.
+3. Keeping the UI updated with every computation in background
         (Pickerview when selecting a segment, Segmented Control on random tip).
-3. Trying to register the app for notification of close/open in order to check NSDates
-4. Getting used to swift syntax.
+4. Trying to register the app for notification of close/open in order to check NSDates
 5. Passing data in segue and back.
 
 ## License
