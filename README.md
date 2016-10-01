@@ -31,10 +31,12 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 **Walkthrough of required and optional user stories:**
+- Displays UIAnimation, "shake" for random tip, persistent data, keyboard as first responder.
 
 <img alt="Tipster Tip Calculator" src="https://i.imgur.com/9lfzuFr.gif" style="max-width: 100%; min-height: 595px;" original-title="">
 
 **Walkthrough of locale specific currency:**
+- Displays the locale-specific currency and currency thousands separators changing based off the location.
 
 <img alt="Locale Currency Gif" src="https://i.imgur.com/3ULkgYR.gif" style="max-width: 100%; min-height: 589px;" original-title="">
 
@@ -49,7 +51,6 @@ Small bugs here and there...
 - 2. Typing non numeric characters.
 - 3. Keeping the UI updated with every computation in background (Pickerview when selecting a segment, Segmented Control on random tip).
 - 4. Trying to register the app for notification of close/open in order to check NSDates
-- 5. Passing data in segue and back.
 
 ## License
 
