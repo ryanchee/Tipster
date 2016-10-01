@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B10A1C81D9EB099008DA1A8 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10A1C71D9EB099008DA1A8 /* SplitViewController.swift */; };
+		9B10A1CA1D9F2D23008DA1A8 /* SplitTipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10A1C91D9F2D23008DA1A8 /* SplitTipTableViewCell.swift */; };
 		9B7C39371D9B933D00A0924B /* tipster.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C39361D9B933D00A0924B /* tipster.png */; };
 		9BDA32DD1D924BCD00A0D429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA32DC1D924BCD00A0D429 /* AppDelegate.swift */; };
 		9BDA32DF1D924BCD00A0D429 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA32DE1D924BCD00A0D429 /* TipViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B10A1C71D9EB099008DA1A8 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		9B10A1C91D9F2D23008DA1A8 /* SplitTipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitTipTableViewCell.swift; sourceTree = "<group>"; };
 		9B7C39361D9B933D00A0924B /* tipster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipster.png; sourceTree = "<group>"; };
 		9BDA32D91D924BCD00A0D429 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDA32DC1D924BCD00A0D429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				9BDA32DE1D924BCD00A0D429 /* TipViewController.swift */,
 				9BDA32E01D924BCD00A0D429 /* Main.storyboard */,
 				9BDA330D1D93285F00A0D429 /* SettingsViewController.swift */,
+				9B10A1C71D9EB099008DA1A8 /* SplitViewController.swift */,
+				9B10A1C91D9F2D23008DA1A8 /* SplitTipTableViewCell.swift */,
 				9BDA32E61D924BCD00A0D429 /* Assets.xcassets */,
 				9BDA32E81D924BCD00A0D429 /* LaunchScreen.storyboard */,
 				9BDA32EB1D924BCD00A0D429 /* Info.plist */,
@@ -272,8 +278,10 @@
 				9BDA32DF1D924BCD00A0D429 /* TipViewController.swift in Sources */,
 				9BDA32DD1D924BCD00A0D429 /* AppDelegate.swift in Sources */,
 				9BDA32E51D924BCD00A0D429 /* Tipster.xcdatamodeld in Sources */,
+				9B10A1CA1D9F2D23008DA1A8 /* SplitTipTableViewCell.swift in Sources */,
 				9BDA330E1D93285F00A0D429 /* SettingsViewController.swift in Sources */,
 				9BDA33101D94BAD000A0D429 /* Protocol.swift in Sources */,
+				9B10A1C81D9EB099008DA1A8 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@ Tipster is a tip calculator application for iOS.
 
 Submitted by: Ryan Chee
 
-Time spent: 8 hours spent in total
+Time spent: 10 hours
 
 ## User Stories
 
@@ -16,14 +16,14 @@ The following **required** functionality is complete:
 * [X] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
-* [ ] UI animations
+* [X] UI animations
 * [X] Remembering the bill amount across app restarts (if < 1mins)
 * [X] Using locale-specific currency and currency thousands separators.
 * [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [X] Added option to randomly select a tip percetage by tap or phone shake.
+- [X] Added option to randomly select a tip percetage by phone shake.
 - [X] Check against non numeric characters entered.
 - [X] Added app logo image on boot.
 - [X] Remembering tip percentage options accross app restarts.
@@ -32,11 +32,11 @@ The following **additional** features are implemented:
 
 **Walkthrough of required and optional user stories:**
 
-<img alt="Tipster Calc" src="https://i.imgur.com/jJ5mEJ1.gif" style="max-width: 100%; min-height: 586px;" original-title="">
+<img alt="Tipster Tip Calculator" src="https://i.imgur.com/9lfzuFr.gif" style="max-width: 100%; min-height: 595px;" original-title="">
 
 **Walkthrough of locale specific currency:**
 
-<img alt="Locale Currency Gif" src="https://i.imgur.com/diMEzbG.gif" style="max-width: 100%; min-height: 586px;" original-title="">
+<img alt="Locale Currency Gif" src="https://i.imgur.com/3ULkgYR.gif" style="max-width: 100%; min-height: 589px;" original-title="">
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
